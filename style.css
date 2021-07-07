@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "arch";
+    background-color: #0F000A;
+    color: white;
+}
+
+h1{
+    font-family: 'oto';
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+iframe{
+    width: 100%;
+}
+
+@font-face{
+    font-family: "oto";
+    src: url(fonts/OtomanopeeOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: "arch";
+    src: url(fonts/ArchivoBlack-Regular.ttf);
+}
+
+/*TABLET*/
+@media only screen and (min-width: 768px){
+    header{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    header nav{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    #section-3 #mobile-h2{
+        display: none;
+    }
+    #section-3 #tablet-h2{
+        display: block !important;
+        text-align: left !important;
+    }
+    #section-4 input[type = "submit"]{
+        width: initial;
+    }
+    #section-4 form > div:last-of-type{
+        text-align: center;
+    }
+    #section-1 article{
+        height: 500px;
+    }
+    #section-1 article p{
+        height: 75px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 992px){
+    header{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    header > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav{
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    #section-4 input[type = "submit"]{
+        width: initial;
+    }
+    #menuDesktop{
+        display: block !important;
+    }
+    header nav button{
+        display: none;
+    }
+    #section-1 article p{
+        height: 55px;
+        font-size: 0.8em;
+    }
+    #section-1 div div div:nth-of-type(2) article h4{
+        font-size: 1em;
+    }
+    #section-1 article img:last-of-type{
+        object-position: 40% 30%;
+    }
+    header p + a:hover{
+        color: white;
+        background-color: #9C2051;
+        transform: scale(1.2);
+    }
+    #section-1 a:hover article div:first-of-type{
+        background-color: #9C2051;
+    }
+    #section-1 a:hover img{
+        filter: grayscale(100%);
+    }
+    #section-1 a:hover h4{
+        transform: scale(1.1);
+    }
+    #section-2 a:hover h3{
+        color: white;
+        transform: rotate(360deg) scale(1.2);
+    }
+    #section-2 a:hover p{
+        color: white;
+    }
+    #section-2 a:hover article{
+        filter: brightness(110%);
+    }
+    #section-3 a:hover{
+        color: white;
+        background-color: #9C2051;
+        transform: scale(1.2);
+    }
+    #section-4 input[type = "submit"]:hover{
+        background-color: #9C2051;
+        transform: scale(1.2);
+    }
+    footer a:hover{
+        color: #0F000A !important;
+    }
+}
+
+header nav{
+    background-color: #9C2051;
+}
+
+header nav a img{
+    width: 60px;
+    height: 65px;
+    filter: invert(100%)
+}
+
+header nav button i{
+    font-size: 1.5em;
+    color: white;
+}
+
+header nav > div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0 1em 0;
+}
+
+header nav > div > div:last-of-type{
+    padding: 1em 0 1em 0;
+}
+
+header ul{
+    list-style: none;
+    padding-left: initial;
+}
+
+#menu li{
+    margin-bottom: 1em;
+}
+
+nav a{
+    color: white;
+}
+
+nav a:hover{
+    color: #0F000A;
+}
+
+#menuDesktop ul{
+    display: flex;
+    margin-bottom: initial;
+}
+
+#menuDesktop{
+    display: none;
+}
+
+#menuDesktop li{
+    margin-right: 1em;
+}
+
+header{
+    background-image: url(img/header-bk.jpg);
+    background-size: cover;
+}
+
+header p{
+    color: #B5B5B5;
+    margin-bottom: 2em;
+}
+
+header p + a{
+    color: white;
+    padding: 1em;
+    background-color: #0F1054;
+    border-radius: 24px;
+    transition: 0.5s;
+}
+
+header p + a:active{
+    color: white;
+    background-color: #9C2051;
+}
+
+header > div{
+    padding: 2em 0 3em 0;
+}
+
+#section-1{
+    padding: 2em 0 2em 0;
+}
+
+#section-1 h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#section-1 article{
+    background-color: white;
+    color: initial;
+}
+
+#section-1 article img{
+    height: 200px;
+    object-fit: cover;
+    background-position: top;
+}
+
+#section-1 article h4{
+    margin-top: 0.5em;
+}
+
+#section-1 a:active article img{
+    filter: grayscale(100%);
+}
+
+#section-1 a:active article div:first-of-type{
+    background-color: #9C2051;
+}
+
+#section-1 article div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    background-color: #0F1054;
+    color: white;
+    margin-top: -0.8em;
+    padding: 1em;
+}
+
+#section-1 article div:last-of-type{
+    padding: 1em;
+}
+
+#section-1 article div:last-of-type span{
+    display: block;
+    color: #B5B5B5;
+}
+
+#section-2{
+    padding: 2em 1em 2em 1em;
+}
+
+#section-2 h3{
+    transition: 0.5s;
+}
+
+#section-2 a:active article{
+    color: white;
+    filter: brightness(90%);
+}
+
+#section-2 p{
+    text-align: center;
+}
+
+#section-2 article{
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section-2 > div > a > article{
+    background-image: url(img/tienda.jpg);
+    height: 100%;
+}
+
+#section-2 > div > div article:first-of-type{
+    background-image: url(img/fundacion.jpg);
+}
+
+#section-2 > div > div a:last-of-type article{
+    background-image: url(img/radio.jpg);
+}
+
+#section-3{
+    padding: 2em 0 2em 0;
+}
+
+#section-3 h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#section-3 #tablet-h2{
+    display: none;
+}
+
+#section-3 p{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#section-3 a{
+    padding: 1em;
+    background-color: #0F1054;
+    border-radius: 24px;
+    transition: 0.5s;
+}
+
+#section-3 a:active{
+    background-color: #9C2051;
+}
+
+#section-3 > div > div:last-of-type{
+    margin-top: 1em;
+}
+
+#section-4{
+    padding: 2em 0 2em 0;
+}
+
+#section-4 h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#section-4 form input, select{
+    width: 100%;
+    padding: 0.5em;
+}
+
+#section-4 input[type = "checkbox"]{
+    width: initial;
+    margin-right: 0.5em;
+}
+
+#section-4 input[type = "submit"]{
+    color: white;
+    padding: 1em;
+    background-color: #0F1054;
+    border-radius: 24px;
+    border: none;
+    margin-top: 1em;
+    transition: 0.5s;
+}
+
+#section-4 input[type = "submit"]:active{
+    background-color: #9C2051;
+}
+
+#section-4 form > div:nth-of-type(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-4 form > div:nth-of-type(2){
+    margin-top: 2em;
+}
+
+footer{
+    background-color: #B5B5B5;
+    padding: 2em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div{
+    margin-bottom: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+footer a{
+    font-size: 2em;
+}
+
+footer p{
+    text-align: center;
+}
+
+footer a:first-of-type{
+    color: #4867AA;
+}
+
+footer a:nth-of-type(2){
+    color: #6450C0;
+}
+
+footer a:nth-of-type(3){
+    color: #1C9CEB;
+}
+
+footer a:nth-of-type(4){
+    color: #F70000;
+}
+
+footer a:active{
+    color: #0F000A;
+}
