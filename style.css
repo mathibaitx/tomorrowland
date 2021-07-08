@@ -7,7 +7,6 @@
 problema hover boton en desktop
 animacion de h1 en desktop
 revisar con el revisor
-sacar border del menu 
 */
 
 html{
@@ -182,6 +181,12 @@ header nav > div:first-of-type > a{
 header nav button i{
     font-size: 1.5em;
     color: white;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+    outline: none;
+    box-shadow: none;
 }
 
 header nav > div:first-of-type{
