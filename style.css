@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-/*
-problema hover boton en desktop
-animacion de h1 en desktop
-revisar con el revisor
-*/
-
 html{
     overflow-x: hidden;
 }
@@ -23,6 +17,12 @@ body{
 h1{
     font-family: 'oto';
     color: white;
+    animation: h1 1s ease-in-out;
+}
+
+@keyframes h1{
+    from {opacity: 0; transform: translate(0, -45%)}
+    to {opacity: 1; transform: none}
 }
 
 a{
@@ -373,6 +373,7 @@ header > div{
     padding: 1em;
     background-color: #0F1054;
     border-radius: 24px;
+    display: inline-block;
     transition: 0.5s;
 }
 
