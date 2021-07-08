@@ -3,7 +3,19 @@
     padding: 0;
 }
 
+/*
+problema hover boton en desktop
+animacion de h1 en desktop
+revisar con el revisor
+sacar border del menu 
+*/
+
+html{
+    overflow-x: hidden;
+}
+
 body{
+    overflow-x: hidden;
     font-family: "arch";
     background-color: #0F000A;
     color: white;
@@ -161,6 +173,10 @@ header nav a img{
     width: 60px;
     height: 65px;
     filter: invert(100%)
+}
+
+header nav > div:first-of-type > a{
+    padding: 0 0.75em 0 0.75em;
 }
 
 header nav button i{
@@ -331,7 +347,7 @@ header > div{
 }
 
 #section-3{
-    padding: 2em 0 2em 0;
+    padding: 2em 1em 2em 1em;
 }
 
 #section-3 h2{
@@ -364,7 +380,7 @@ header > div{
 }
 
 #section-4{
-    padding: 2em 0 2em 0;
+    padding: 2em 1em 2em 1em;
 }
 
 #section-4 h2{
